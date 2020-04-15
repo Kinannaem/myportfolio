@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Russo+One&display=swap');
+html{  
+scroll-behavior: smooth;
+--scrollbarBG: rgb(255, 255, 255);
+--thumbBG: rgb(0, 0, 0);
+}
+body::-webkit-scrollbar {
+    width: 11px;
+    
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+  
+body {
+    
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    /*font-family: 'Russo One', sans-serif;*/
+    color: black;
+    min-height: 100vh;
+    scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+.home {
+
+    max-height: 100vh;
+    background-image: url(image/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+
+
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid red;
+    z-index: 10;
+}
+
+header .brand-name {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+
+}
+
+header .brand-name img {
+    width: 80px;
+    margin-left: 50px;
+}
+
+header.navbar {
+    background-color: darkred;
+}
+
+header .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+header .navbar ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+header .navbar ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    display: block;
+    color: white;
+    position: relative;
+}
+
+header .navbar ul li a.active::before {
+    content: '';
+    height: 10px;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+}
+
+.container {
+    max-width: 1140px;
+    /*   background-color: darkblue;
+    margin: auto;*/
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home .fullscreen {
+    min-height: 100vh;
+}
+
+.home .home-contaent {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home .home-contaent .block {
+    margin: 60px;
+    background-color: red;
+    flex: 0 0 75%;
+    max-width: 450px;
+    text-justify: initial;
+
+}
+
+.home .home-contaent .block h6 {
+    color: lavender;
+    font-family: Roboto Mono;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.home .home-contaent .block h1 {
+    color: lavender;
+    font-family: Roboto Mono;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.home .home-contaent .block h3 {
+    color: lavender;
+    font-family: Roboto Mono;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.home .home-contaent .block2 {
+    display: ;
+    margin: 20px;
+    padding-left: 30px;
+    background-color: white;
+    flex: 0 0 45%;
+
+    text-justify: initial;
+
+}
+
+/*About Me Section */
+
+.aboutMe {
+    margin-left: 50px;
+    padding: 100px 15px;
+    min-height: 100vh;
+}
+
+
+.aboutMe .sectionTitle {
+    flex: 0 0 150%;
+    max-width: 100%;
+    font-family: Roboto Mono;
+    margin-bottom: 40px;
+
+
+}
+
+.aboutMe .sectionTitle h1 {
+    color: red;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+}
+
+.aboutMe .sectionTitle h1:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 1px;
+    right: 0%;
+    background-color: red;
+    bottom: 0px;
+}
+
+.aboutMe .sectionTitle p {
+    display: block;
+    color: black;
+
+}
+
+.aboutMe .sectionTitle p .small {
+    display: block;
+    font-size: 14px;
+
+}
+
+.aboutMe .about-content .img {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.aboutMe .about-content .img img {
+    width: 100%;
+    display: block;
+}
+
+.aboutMe .about-content .text {
+    flex: 0 0 60%;
+    margin: 0 0 0 20px;
+    width: 150px;
+}
+
+.aboutMe .about-content h4 {
+    font-family: Roboto Mono;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.aboutMe .about-content p {
+    font-family: Roboto Mono;
+    font-size: 15px;
+    font-weight: 500;
+    text-justify: kashida;
+    letter-spacing: 1px;
+    line-height: 1.6;
+
+}
+
+.aboutMe .about-content .info {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aboutMe .about-content .info .card {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(80% - 15px);
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    border-left: 1px red solid;
+    padding: 10px;
+
+}
+
+
+
+}
+
+.aboutMe .about-content .info .card p {
+    flex: 0 0 calc(100% - 15px);
+    max-width: calc(100% - 15px);
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+
+.aboutMe .about-content .info ul li {
+    flex: 0 0 calc(100% - 15px);
+    max-width: calc(100% - 15px);
+    list-style: none;
+    font-family: Roboto Mono;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-justify: justify;
+
+
+}
+
+/* Portfolio 
+
+.sectionTitle{
+    flex: 0 0 100%;
+    max-width: 100%;
+    font-family: Roboto Mono;
+    margin-bottom: 40px;
+ 
+ 
+ }
+ .service .sectionTitle h1{
+     color: rgb(255, 255, 255);
+     display: inline-block;
+     margin: 0;
+     position: relative;
+     
+    
+ }
+ 
+.service{
+  
+}
+ 
+ .service .sectionTitle p{
+     display: block;
+     color: black;
+ 
+ }
+.textcenter{
+    text-align: center !important;
+}
+.textleft{
+    text-align: left !important;
+}
+.textright{
+    text-align: center !important:
+}
+
+
+}
+.service  .container .row .sectionTitle{
+    text-align: center;
+    margin: -50px;
+}
+ .box p {
+     font-size: 10px;
+ }
+
+ .box h6 {
+    font-size: 30px;
+}
+
+.service .service-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: 100%;
+    margin: 50px;
+}
+
+.service .service-content .box{
+    flex: 0 0 calc(30% - 15px);
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-bottom: 30px;
+    max-width: 100%;
+    
+
+}
+.service .service-content .box img{
+    max-width: 100%;
+
+}
+.service .service-content .row{
+   margin-left: 7%;
+    text-align: justify;
+}
+*/
+
+/*Service Section */
+
+
+
+
+
+
+
+.service {
+    margin-left: 50px;
+    padding: 100px 15px;
+    min-height: 100vh;
+}
+
+.service .sectionTitle {
+    flex: 0 0 100%;
+    max-width: 100%;
+    font-family: Roboto Mono;
+    margin-bottom: 40px;
+    text-align: center;
+    text-justify: justify;
+
+}
+
+.service .sectionTitle h1 {
+    color: red;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+}
+
+.service .sectionTitle h1:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 1px;
+    right: 0%;
+    background-color: rgb(0, 0, 0);
+    bottom: 0px;
+}
+.service .sectionTitle div {
+  text-align: justify;
+    
+
+}
+
+.service .sectionTitle p {
+    display: block;
+    color: black;
+    
+
+}
+
+.service .sectionTitle p .small {
+    display: block;
+    font-size: 14px;
+    
+
+}
+
+.service .about-content p {
+    font-family: Roboto Mono;
+    font-size: 15px;
+    font-weight: 500;
+    text-justify: kashida;
+    letter-spacing: 1px;
+    line-height: 1.6;
+   
+
+}
+
+.service .about-content .info {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service .about-content .info .card {
+    flex: 0 0 calc(33% - 15px);
+    max-width: calc(80% - 15px);
+    margin-top: 10px;
+    flex-wrap: wrap;
+    border-top: 3px red solid;
+    padding: 10px;
+
+}
+
+
+
+}
+
+.service .about-content .info .card p {
+    flex: 0 0 calc(100% - 15px);
+    max-width: calc(100% - 15px);
+    margin-top: 10px;
+    font-size: 14px;
+
+}
+
+.service .about-content .info ul li {
+    flex: 0 0 calc(100% - 15px);
+    max-width: calc(100% - 15px);
+    list-style: none;
+    font-family: Roboto Mono;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-justify: justify;
+
+
+}
+
+/*Service Section End */
+
+
+
+
+
+
+
+.textcenter{
+    text-align: center !important;
+}
+.textleft{
+    text-align: left !important;
+}
+.textright{
+    text-align: center !important:
+}
+
+.port{
+    margin-left: 70px;
+    padding: 100px 15px;
+    min-height: 100vh;
+    padding: 100px 15px;
+}
+
+.port .sectionTitle{
+    flex: 0 0 100%;
+    max-width: calc(100% - 8px );
+}
+}
+
+.port .portGallery{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+  
+}
+
+.port .portGallery .item{
+    margin: 25px;
+    flex: 0 0 100%;
+    max-width: calc(80%-10px);
+    margin-top: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    display:inline-flex ;
+}
+
+.port .portGallery .item img{
+    margin: 6px;
+  width: 150px;
+  filter: grayscale(1);
+
+  transition: all 0.5s ease-in-out;
+}
+.port .portGallery .item img:hover{
+    width: 200px;
+    filter: grayscale(0);
+  }
+
+
+
+
+
+ 
